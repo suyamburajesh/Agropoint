@@ -1,0 +1,133 @@
+<html>
+
+  <head>
+  <link rel="stylesheet" href="css/style.css">
+ 
+     <title>Welcome to Agri support system </title>
+	 <style>
+	 
+	  @media screen and (max-width :250px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }  @media screen and (max-width :300px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }
+	    @media screen and (max-width :350px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }
+	    @media screen and (max-width :400px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }
+	    @media screen and (max-width :450px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }
+	    @media screen and (max-width :500px)
+	  {
+	  body{
+	  position:absolute;
+	  }
+	  }
+	  @media screen and (max-width :400px){
+	   #header{
+        display:block;
+		text-align:center;
+		height:100px;
+		margin-bottom:30px;
+		
+   }
+   #form1{
+     margin:0;
+		float:left;
+		margin-left:17px;
+		margin-bottom:30px;
+   }
+ #form2{
+       margin:0;
+	   margin-left:17px;
+		float:left;
+   }
+   }	  
+	 </style>
+	<script>
+	function send(){
+				       var a = document.forms["exForm"]["exuser"].value;
+ var b = document.forms["exForm"]["expassword"].value;
+ 
+ 	     
+
+if (a == null || a == "")
+ {
+        alert("Please Enter the Username ");
+        return false;
+    }
+
+if (b == null || b =="") 
+{
+        alert("Please Enter the Password ");
+        return false;
+    }
+
+}
+			function send1(){
+			  var c = document.forms["newForm"]["newuser"].value;
+ var d = document.forms["newForm"]["newpassword"].value;
+	if (c == null || c == "")
+ {
+        alert("Please Enter the Username ");
+        return false;
+    }
+
+if (d == null || d =="") 
+{
+        alert("Please Enter the Password ");
+        return false;
+    }
+			}	 
+
+				  </script>
+  </head>
+   <body>
+ <diV id="header">
+     <br><h1>Welcome to Agri support System</h1>
+ </div>
+  <div id="form1">
+   <table height="320">
+	<form method="post" action="login.jsp" name="exForm" onsubmit="send()">
+	<tr class="heading1"  ><td class="heading1" colspan=2>Existing farmer</td><td></td></tr>
+	<tr height="60px"><td>
+	<b class="box">username </b></td><td><input type="text" id="exuser" name="exuser" required="required" class="exuser"></td></tr><tR>
+	<td><b class="box">password </b></td><td><input type="password" id="expassword" name="expassword" required="required" class="expassword"></td></tr>
+<tr><td colspan=2><center>	<input type="submit" value="login" class="exsubmit"></center></td><td></td></tr>
+<tr class="footer"><td  colspan=2></td><td></td></tr>
+	</form>
+	</table>
+</div>
+  <div id="form2">
+	    <table height="320">
+	<form method="post" action="signup.jsp" name="newForm" onsubmit="send1()">
+	<tr class="heading1"><td  class="heading1" colspan=2>New User</td><td></td></tr>
+	<tr  height="60pzx"><td>
+	<b  class="box">username </b></td><td><input type="text" id="newuser" name="newuser" required="required" class="exuser"></td></tr><tR>
+	<td><b  class="box">password </b></td><td><input type="password" id="newpassword" name="newpassword" required="required" class="expassword"></td></tr>
+<tr><td  colspan=2>	<center><input type="submit" value="signup" class="exsubmit"></center></td></td><td></tr>
+<tr class="footer"><td  colspan=2></td><td></td></tr>
+	</form>
+	</table>
+  </div>
+   </body>
+
+</html>
